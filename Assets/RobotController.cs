@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RobotController : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class RobotController : MonoBehaviour
 	public LayerMask CornerScannerLayerMask;
 	public LayerMask RobotScannerLayerMask;
 	Rigidbody robotRB;
+
+	public Text RobotNameText;
 	void Start()
 	{
 		robotRB = GetComponent<Rigidbody>();

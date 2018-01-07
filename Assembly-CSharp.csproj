@@ -55,6 +55,7 @@
      <Compile Include="Assets\Neural Networking\NeuralNet.cs" />
      <Compile Include="Assets\Neural Networking\Neuron.cs" />
      <Compile Include="Assets\RobotController.cs" />
+     <Compile Include="Assets\RobotNetwork.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
