@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Core.unity
+- path: Assets/EightSensors.unity
   isLoaded: 1
   isActive: 1

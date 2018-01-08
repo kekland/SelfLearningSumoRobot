@@ -51,11 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Core.cs" />
-     <Compile Include="Assets\Neural Networking\NeuralNet.cs" />
-     <Compile Include="Assets\Neural Networking\Neuron.cs" />
-     <Compile Include="Assets\RobotController.cs" />
-     <Compile Include="Assets\RobotNetwork.cs" />
+     <Compile Include="Assets\Neural Networking\NeuralNetwork.cs" />
+     <Compile Include="Assets\Scripts\Core.cs" />
+     <Compile Include="Assets\Scripts\CoreAdvanced.cs" />
+     <Compile Include="Assets\Scripts\Match.cs" />
+     <Compile Include="Assets\Scripts\MatchAdvanced.cs" />
+     <Compile Include="Assets\Scripts\RobotController.cs" />
+     <Compile Include="Assets\Scripts\RobotControllerAdvanced.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4830822543721142}
   - component: {fileID: 33058627202068540}
   - component: {fileID: 23035529959159978}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RobotScanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4877764509975812}
   - component: {fileID: 33689473099087620}
   - component: {fileID: 23339758460868254}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CornerScanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 223878699361288708}
   - component: {fileID: 114007137310181620}
   - component: {fileID: 114709638659980504}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 224778361180152932}
   - component: {fileID: 222918685251990782}
   - component: {fileID: 114807577066298578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 23061864899997544}
   - component: {fileID: 54267005304091332}
   - component: {fileID: 114796545274252230}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,10 +275,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!65 &65964852394941064
 BoxCollider:

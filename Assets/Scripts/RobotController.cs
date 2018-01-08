@@ -17,6 +17,7 @@ public class RobotController : MonoBehaviour
 
 	public bool CornerScannerSensorData;
 	public bool RobotScannerSensorData;
+	public bool IsInContact;
 
 	public LayerMask CornerScannerLayerMask;
 	public LayerMask RobotScannerLayerMask;
@@ -50,8 +51,9 @@ public class RobotController : MonoBehaviour
 		RaycastHit hit;
 
 		//Construct ray object
+		float thickness = 0.3f;
 		Ray ray = new Ray(RobotScanner.transform.position, transform.forward);
-		return Physics.Raycast(ray, RobotScannerLayerMask.value);
+		return Physics.SphereCast(ray, thickness, 9f, RobotScannerLayerMask);
 	}
 
 
@@ -60,7 +62,7 @@ public class RobotController : MonoBehaviour
 	void ModifyScannerMaterial()
 	{
 		//If scanner did hit corner - substitute material with red, otherwise - green
-		CornerScannerRenderer.material = CornerScannerSensorData ?  ScannerDefaultMaterial : ScannerHitCornerMaterial;
+		CornerScannerRenderer.material = CornerScannerSensorData ? ScannerDefaultMaterial : ScannerHitCornerMaterial;
 		RobotScannerRenderer.material = RobotScannerSensorData ? ScannerDefaultMaterial : ScannerHitCornerMaterial;
 	}
 
@@ -92,5 +94,19 @@ public class RobotController : MonoBehaviour
 			return hit.collider.gameObject;
 		}
 		return null;
+	}
+
+	void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.layer == 9)
+		{
+			IsInContact = true;
+		}
+	}
+
+	void OnCollisionExit(Collision other) {
+		if(other.gameObject.layer == 9) {
+			IsInContact = false;
+		}
 	}
 }
